@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EDA98B501CC7F1F0008ECCBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA98B4F1CC7F1F0008ECCBF /* AppDelegate.swift */; };
+		EDA98B521CC7F1F0008ECCBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA98B511CC7F1F0008ECCBF /* ViewController.swift */; };
+		EDA98B551CC7F1F0008ECCBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA98B531CC7F1F0008ECCBF /* Main.storyboard */; };
+		EDA98B571CC7F1F0008ECCBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDA98B561CC7F1F0008ECCBF /* Assets.xcassets */; };
+		EDA98B5A1CC7F1F0008ECCBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA98B581CC7F1F0008ECCBF /* LaunchScreen.storyboard */; };
+		EDA98B651CC7F1F0008ECCBF /* Buzz_Movie_SelectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA98B641CC7F1F0008ECCBF /* Buzz_Movie_SelectorTests.swift */; };
+		EDA98B701CC7F1F0008ECCBF /* Buzz_Movie_SelectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA98B6F1CC7F1F0008ECCBF /* Buzz_Movie_SelectorUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EDA98B611CC7F1F0008ECCBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDA98B441CC7F1F0008ECCBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDA98B4B1CC7F1F0008ECCBF;
+			remoteInfo = "Buzz Movie Selector";
+		};
+		EDA98B6C1CC7F1F0008ECCBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDA98B441CC7F1F0008ECCBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDA98B4B1CC7F1F0008ECCBF;
+			remoteInfo = "Buzz Movie Selector";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EDA98B4C1CC7F1F0008ECCBF /* Buzz Movie Selector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Buzz Movie Selector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDA98B4F1CC7F1F0008ECCBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EDA98B511CC7F1F0008ECCBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EDA98B541CC7F1F0008ECCBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EDA98B561CC7F1F0008ECCBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDA98B591CC7F1F0008ECCBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EDA98B5B1CC7F1F0008ECCBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDA98B601CC7F1F0008ECCBF /* Buzz Movie SelectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Buzz Movie SelectorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDA98B641CC7F1F0008ECCBF /* Buzz_Movie_SelectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buzz_Movie_SelectorTests.swift; sourceTree = "<group>"; };
+		EDA98B661CC7F1F0008ECCBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDA98B6B1CC7F1F0008ECCBF /* Buzz Movie SelectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Buzz Movie SelectorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDA98B6F1CC7F1F0008ECCBF /* Buzz_Movie_SelectorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buzz_Movie_SelectorUITests.swift; sourceTree = "<group>"; };
+		EDA98B711CC7F1F0008ECCBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDA98B491CC7F1F0008ECCBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDA98B5D1CC7F1F0008ECCBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDA98B681CC7F1F0008ECCBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EDA98B431CC7F1F0008ECCBF = {
+			isa = PBXGroup;
+			children = (
+				EDA98B4E1CC7F1F0008ECCBF /* Buzz Movie Selector */,
+				EDA98B631CC7F1F0008ECCBF /* Buzz Movie SelectorTests */,
+				EDA98B6E1CC7F1F0008ECCBF /* Buzz Movie SelectorUITests */,
+				EDA98B4D1CC7F1F0008ECCBF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EDA98B4D1CC7F1F0008ECCBF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDA98B4C1CC7F1F0008ECCBF /* Buzz Movie Selector.app */,
+				EDA98B601CC7F1F0008ECCBF /* Buzz Movie SelectorTests.xctest */,
+				EDA98B6B1CC7F1F0008ECCBF /* Buzz Movie SelectorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDA98B4E1CC7F1F0008ECCBF /* Buzz Movie Selector */ = {
+			isa = PBXGroup;
+			children = (
+				EDA98B4F1CC7F1F0008ECCBF /* AppDelegate.swift */,
+				EDA98B511CC7F1F0008ECCBF /* ViewController.swift */,
+				EDA98B531CC7F1F0008ECCBF /* Main.storyboard */,
+				EDA98B561CC7F1F0008ECCBF /* Assets.xcassets */,
+				EDA98B581CC7F1F0008ECCBF /* LaunchScreen.storyboard */,
+				EDA98B5B1CC7F1F0008ECCBF /* Info.plist */,
+			);
+			path = "Buzz Movie Selector";
+			sourceTree = "<group>";
+		};
+		EDA98B631CC7F1F0008ECCBF /* Buzz Movie SelectorTests */ = {
+			isa = PBXGroup;
+			children = (
+				EDA98B641CC7F1F0008ECCBF /* Buzz_Movie_SelectorTests.swift */,
+				EDA98B661CC7F1F0008ECCBF /* Info.plist */,
+			);
+			path = "Buzz Movie SelectorTests";
+			sourceTree = "<group>";
+		};
+		EDA98B6E1CC7F1F0008ECCBF /* Buzz Movie SelectorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EDA98B6F1CC7F1F0008ECCBF /* Buzz_Movie_SelectorUITests.swift */,
+				EDA98B711CC7F1F0008ECCBF /* Info.plist */,
+			);
+			path = "Buzz Movie SelectorUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDA98B4B1CC7F1F0008ECCBF /* Buzz Movie Selector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDA98B741CC7F1F0008ECCBF /* Build configuration list for PBXNativeTarget "Buzz Movie Selector" */;
+			buildPhases = (
+				EDA98B481CC7F1F0008ECCBF /* Sources */,
+				EDA98B491CC7F1F0008ECCBF /* Frameworks */,
+				EDA98B4A1CC7F1F0008ECCBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Buzz Movie Selector";
+			productName = "Buzz Movie Selector";
+			productReference = EDA98B4C1CC7F1F0008ECCBF /* Buzz Movie Selector.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EDA98B5F1CC7F1F0008ECCBF /* Buzz Movie SelectorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDA98B771CC7F1F0008ECCBF /* Build configuration list for PBXNativeTarget "Buzz Movie SelectorTests" */;
+			buildPhases = (
+				EDA98B5C1CC7F1F0008ECCBF /* Sources */,
+				EDA98B5D1CC7F1F0008ECCBF /* Frameworks */,
+				EDA98B5E1CC7F1F0008ECCBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDA98B621CC7F1F0008ECCBF /* PBXTargetDependency */,
+			);
+			name = "Buzz Movie SelectorTests";
+			productName = "Buzz Movie SelectorTests";
+			productReference = EDA98B601CC7F1F0008ECCBF /* Buzz Movie SelectorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EDA98B6A1CC7F1F0008ECCBF /* Buzz Movie SelectorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDA98B7A1CC7F1F0008ECCBF /* Build configuration list for PBXNativeTarget "Buzz Movie SelectorUITests" */;
+			buildPhases = (
+				EDA98B671CC7F1F0008ECCBF /* Sources */,
+				EDA98B681CC7F1F0008ECCBF /* Frameworks */,
+				EDA98B691CC7F1F0008ECCBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDA98B6D1CC7F1F0008ECCBF /* PBXTargetDependency */,
+			);
+			name = "Buzz Movie SelectorUITests";
+			productName = "Buzz Movie SelectorUITests";
+			productReference = EDA98B6B1CC7F1F0008ECCBF /* Buzz Movie SelectorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDA98B441CC7F1F0008ECCBF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Ale Patrón";
+				TargetAttributes = {
+					EDA98B4B1CC7F1F0008ECCBF = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 5U48XLFTQZ;
+					};
+					EDA98B5F1CC7F1F0008ECCBF = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 5U48XLFTQZ;
+						TestTargetID = EDA98B4B1CC7F1F0008ECCBF;
+					};
+					EDA98B6A1CC7F1F0008ECCBF = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 5U48XLFTQZ;
+						TestTargetID = EDA98B4B1CC7F1F0008ECCBF;
+					};
+				};
+			};
+			buildConfigurationList = EDA98B471CC7F1F0008ECCBF /* Build configuration list for PBXProject "Buzz Movie Selector" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EDA98B431CC7F1F0008ECCBF;
+			productRefGroup = EDA98B4D1CC7F1F0008ECCBF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDA98B4B1CC7F1F0008ECCBF /* Buzz Movie Selector */,
+				EDA98B5F1CC7F1F0008ECCBF /* Buzz Movie SelectorTests */,
+				EDA98B6A1CC7F1F0008ECCBF /* Buzz Movie SelectorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDA98B4A1CC7F1F0008ECCBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDA98B5A1CC7F1F0008ECCBF /* LaunchScreen.storyboard in Resources */,
+				EDA98B571CC7F1F0008ECCBF /* Assets.xcassets in Resources */,
+				EDA98B551CC7F1F0008ECCBF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDA98B5E1CC7F1F0008ECCBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDA98B691CC7F1F0008ECCBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDA98B481CC7F1F0008ECCBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDA98B521CC7F1F0008ECCBF /* ViewController.swift in Sources */,
+				EDA98B501CC7F1F0008ECCBF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDA98B5C1CC7F1F0008ECCBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDA98B651CC7F1F0008ECCBF /* Buzz_Movie_SelectorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDA98B671CC7F1F0008ECCBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDA98B701CC7F1F0008ECCBF /* Buzz_Movie_SelectorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EDA98B621CC7F1F0008ECCBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDA98B4B1CC7F1F0008ECCBF /* Buzz Movie Selector */;
+			targetProxy = EDA98B611CC7F1F0008ECCBF /* PBXContainerItemProxy */;
+		};
+		EDA98B6D1CC7F1F0008ECCBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDA98B4B1CC7F1F0008ECCBF /* Buzz Movie Selector */;
+			targetProxy = EDA98B6C1CC7F1F0008ECCBF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EDA98B531CC7F1F0008ECCBF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDA98B541CC7F1F0008ECCBF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EDA98B581CC7F1F0008ECCBF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDA98B591CC7F1F0008ECCBF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EDA98B721CC7F1F0008ECCBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EDA98B731CC7F1F0008ECCBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDA98B751CC7F1F0008ECCBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Buzz Movie Selector/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.AlePatron.Buzz-Movie-Selector";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EDA98B761CC7F1F0008ECCBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Buzz Movie Selector/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.AlePatron.Buzz-Movie-Selector";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EDA98B781CC7F1F0008ECCBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Buzz Movie SelectorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.AlePatron.Buzz-Movie-SelectorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Buzz Movie Selector.app/Buzz Movie Selector";
+			};
+			name = Debug;
+		};
+		EDA98B791CC7F1F0008ECCBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Buzz Movie SelectorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.AlePatron.Buzz-Movie-SelectorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Buzz Movie Selector.app/Buzz Movie Selector";
+			};
+			name = Release;
+		};
+		EDA98B7B1CC7F1F0008ECCBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Buzz Movie SelectorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.AlePatron.Buzz-Movie-SelectorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Buzz Movie Selector";
+			};
+			name = Debug;
+		};
+		EDA98B7C1CC7F1F0008ECCBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Buzz Movie SelectorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.AlePatron.Buzz-Movie-SelectorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Buzz Movie Selector";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDA98B471CC7F1F0008ECCBF /* Build configuration list for PBXProject "Buzz Movie Selector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDA98B721CC7F1F0008ECCBF /* Debug */,
+				EDA98B731CC7F1F0008ECCBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDA98B741CC7F1F0008ECCBF /* Build configuration list for PBXNativeTarget "Buzz Movie Selector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDA98B751CC7F1F0008ECCBF /* Debug */,
+				EDA98B761CC7F1F0008ECCBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EDA98B771CC7F1F0008ECCBF /* Build configuration list for PBXNativeTarget "Buzz Movie SelectorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDA98B781CC7F1F0008ECCBF /* Debug */,
+				EDA98B791CC7F1F0008ECCBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EDA98B7A1CC7F1F0008ECCBF /* Build configuration list for PBXNativeTarget "Buzz Movie SelectorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDA98B7B1CC7F1F0008ECCBF /* Debug */,
+				EDA98B7C1CC7F1F0008ECCBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDA98B441CC7F1F0008ECCBF /* Project object */;
+}

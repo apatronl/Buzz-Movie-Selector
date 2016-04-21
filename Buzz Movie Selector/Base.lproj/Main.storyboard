@@ -43,7 +43,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="24z-5D-JiT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1854.5" y="889.5"/>
+            <point key="canvasLocation" x="1834.5" y="889.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="uO5-AY-zzl">
@@ -62,7 +62,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UVO-t1-nZv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1834.5" y="-717.5"/>
+            <point key="canvasLocation" x="1834.5" y="-739.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="TWW-pS-jrs">
@@ -104,13 +104,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DJK-hk-h5u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1285.5" y="-739.5"/>
+            <point key="canvasLocation" x="1230.5" y="-739.5"/>
         </scene>
         <!--Search View Controller-->
         <scene sceneID="SaG-ou-mv7">
             <objects>
                 <tableViewController id="y80-KF-0Ma" customClass="SearchViewController" customModule="Buzz_Movie_Selector" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="iHL-Xb-JvJ">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="107" sectionHeaderHeight="28" sectionFooterHeight="28" id="iHL-Xb-JvJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -120,11 +120,11 @@
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="PFf-OZ-bCG">
-                                <rect key="frame" x="0.0" y="136" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="107" id="PFf-OZ-bCG" customClass="MovieCell" customModule="Buzz_Movie_Selector" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="136" width="375" height="107"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PFf-OZ-bCG" id="a8U-ag-xJX">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="106.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <accessibility key="accessibilityConfiguration" identifier="MovieCell"/>
@@ -142,7 +142,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SzV-Na-8nx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2093.5" y="81.5"/>
+            <point key="canvasLocation" x="1834.5" y="81.5"/>
         </scene>
         <!--Profile-->
         <scene sceneID="p0C-yI-PZ7">
@@ -163,7 +163,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GdO-pK-Zwu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1267.5" y="889.5"/>
+            <point key="canvasLocation" x="1230.5" y="889.5"/>
         </scene>
         <!--Search-->
         <scene sceneID="PDq-Y4-XjZ">

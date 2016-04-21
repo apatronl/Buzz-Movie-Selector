@@ -13,7 +13,7 @@ import SwiftyJSON
 class SearchViewController: UITableViewController, UISearchBarDelegate {
     
     @IBOutlet weak var searchBar: UISearchBar!
-    var movies = [Movie]()
+    var movies: [Movie] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,10 +21,27 @@ class SearchViewController: UITableViewController, UISearchBarDelegate {
         // Do any additional setup after loading the view.
         self.navigationItem.title = "Search"
         searchBar.delegate = self
+        self.tableView.registerNib(UINib(nibName: "MovieCell", bundle: nil), forCellReuseIdentifier: "MovieCell")
+    }
+    
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return movies.count
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("MovieCell", forIndexPath: indexPath) as! MovieCell
+        let movie = movies[indexPath.row]
+        cell.movie = movie
+        return cell
     }
     
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
         searchBar.resignFirstResponder()
+        movies.removeAll()
         if let key = searchBar.text {
             key.trim()
             let newKey = key.stringByReplacingOccurrencesOfString(" ", withString: "+", options: NSStringCompareOptions.LiteralSearch, range: nil)
@@ -49,17 +66,29 @@ class SearchViewController: UITableViewController, UISearchBarDelegate {
                             for i in 0...14 {
                                 if let title = res["movies"][i]["title"].string {
                                     let year = String(res["movies"][i]["year"])
+                                    let mpaa_rating = res["movies"][i]["mpaa_rating"].string
+                                    let thumbnail = res["movies"][i]["posters"]["thumbnail"].string?.urlToImg()
+                                    let movie = Movie(title: title, mpaa_rating: mpaa_rating!, year: year, thumbnail: thumbnail)
+                                    self.movies.append(movie)
                                     print(title)
                                     print(year)
                                 }
+                                self.tableView.reloadData()
                             }
                         } else {
                             for i in 0...total - 1 {
                                 if let title = res["movies"][i]["title"].string {
                                     let year = String(res["movies"][i]["year"])
+                                    print(year)
+                                    let mpaa_rating = res["movies"][i]["mpaa_rating"].string
+                                    print(mpaa_rating)
+                                    let thumbnail = res["movies"][i]["posters"]["thumbnail"].string?.urlToImg()
+                                    let movie = Movie(title: title, mpaa_rating: mpaa_rating!, year: year, thumbnail: thumbnail)
+                                    self.movies.append(movie)
                                     print(title)
                                     print(year)
                                 }
+                                self.tableView.reloadData()
                             }
                         }
                     } else {
@@ -70,14 +99,6 @@ class SearchViewController: UITableViewController, UISearchBarDelegate {
                 print(error)
             }
         }
-    }
-    
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return movies.count
     }
     
     func showAlert(alertType: String) {

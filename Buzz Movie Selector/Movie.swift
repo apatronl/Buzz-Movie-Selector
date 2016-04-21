@@ -7,19 +7,21 @@
 //
 
 import Foundation
-
 import UIKit
 
 class Movie {
     
-    var name: String
-    var thumbnail: UIImage?
+    var title: String
     var year: String
+    var mpaa_rating: String
+    var thumbnail: UIImage?
     
-    init(name: String, thumbnail: UIImage?, year: String) {
-        self.name = name
-        self.thumbnail = thumbnail
+    init(title: String, mpaa_rating: String, year: String, thumbnail: UIImage?) {
+        self.title = title
+        self.mpaa_rating = mpaa_rating
         self.year = year
+        if let theThumbnail = thumbnail {
+            self.thumbnail = theThumbnail
+        }
     }
-    
 }

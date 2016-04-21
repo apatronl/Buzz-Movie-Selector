@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		268819FCF0F91C23836B37AB /* Pods_Buzz_Movie_Selector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD6133CE89C2B2AEADA5AC8B /* Pods_Buzz_Movie_Selector.framework */; };
+		ED16051A1CC972D6006F3B88 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1605191CC972D6006F3B88 /* MovieCell.swift */; };
+		ED16051C1CC97493006F3B88 /* v1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ED16051B1CC97493006F3B88 /* v1.jpg */; };
 		ED237F3C1CC92EBD00FF2CC9 /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED237F3B1CC92EBD00FF2CC9 /* MovieCell.xib */; };
 		ED4CFDE11CC88081000D89C1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4CFDE01CC88081000D89C1 /* SearchViewController.swift */; };
 		ED5967221CC8A9DE0003FFE0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5967211CC8A9DE0003FFE0 /* Constants.swift */; };
@@ -46,6 +48,8 @@
 		AE0C108E1B7830575C020807 /* Pods-Buzz Movie Selector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Buzz Movie Selector.release.xcconfig"; path = "Pods/Target Support Files/Pods-Buzz Movie Selector/Pods-Buzz Movie Selector.release.xcconfig"; sourceTree = "<group>"; };
 		C15CE6D13FC26DA046FAF772 /* Pods-Buzz Movie Selector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Buzz Movie Selector.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Buzz Movie Selector/Pods-Buzz Movie Selector.debug.xcconfig"; sourceTree = "<group>"; };
 		DD6133CE89C2B2AEADA5AC8B /* Pods_Buzz_Movie_Selector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Buzz_Movie_Selector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED1605191CC972D6006F3B88 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		ED16051B1CC97493006F3B88 /* v1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = v1.jpg; sourceTree = "<group>"; };
 		ED237F3B1CC92EBD00FF2CC9 /* MovieCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
 		ED4CFDE01CC88081000D89C1 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		ED5967211CC8A9DE0003FFE0 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = "Buzz Movie Selector/Constants.swift"; sourceTree = "<group>"; };
@@ -115,6 +119,7 @@
 		ED5967231CC8ABAB0003FFE0 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				ED16051B1CC97493006F3B88 /* v1.jpg */,
 				ED5967211CC8A9DE0003FFE0 /* Constants.swift */,
 				EDC5CC501CC8B165004150A1 /* Utils.swift */,
 			);
@@ -194,6 +199,7 @@
 			children = (
 				EDC5CC4E1CC8B0C1004150A1 /* Movie.swift */,
 				ED237F3B1CC92EBD00FF2CC9 /* MovieCell.xib */,
+				ED1605191CC972D6006F3B88 /* MovieCell.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -308,6 +314,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED16051C1CC97493006F3B88 /* v1.jpg in Resources */,
 				EDA98B5A1CC7F1F0008ECCBF /* LaunchScreen.storyboard in Resources */,
 				EDA98B571CC7F1F0008ECCBF /* Assets.xcassets in Resources */,
 				ED237F3C1CC92EBD00FF2CC9 /* MovieCell.xib in Resources */,
@@ -392,6 +399,7 @@
 				ED5967221CC8A9DE0003FFE0 /* Constants.swift in Sources */,
 				EDA98B801CC7F6E9008ECCBF /* ProfileViewController.swift in Sources */,
 				EDC5CC4F1CC8B0C1004150A1 /* Movie.swift in Sources */,
+				ED16051A1CC972D6006F3B88 /* MovieCell.swift in Sources */,
 				EDA98B501CC7F1F0008ECCBF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

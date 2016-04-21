@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		268819FCF0F91C23836B37AB /* Pods_Buzz_Movie_Selector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD6133CE89C2B2AEADA5AC8B /* Pods_Buzz_Movie_Selector.framework */; };
+		ED237F3C1CC92EBD00FF2CC9 /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED237F3B1CC92EBD00FF2CC9 /* MovieCell.xib */; };
+		ED4CFDE11CC88081000D89C1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4CFDE01CC88081000D89C1 /* SearchViewController.swift */; };
+		ED5967221CC8A9DE0003FFE0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5967211CC8A9DE0003FFE0 /* Constants.swift */; };
 		EDA98B501CC7F1F0008ECCBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA98B4F1CC7F1F0008ECCBF /* AppDelegate.swift */; };
 		EDA98B521CC7F1F0008ECCBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA98B511CC7F1F0008ECCBF /* ViewController.swift */; };
 		EDA98B551CC7F1F0008ECCBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA98B531CC7F1F0008ECCBF /* Main.storyboard */; };
@@ -14,6 +18,11 @@
 		EDA98B5A1CC7F1F0008ECCBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA98B581CC7F1F0008ECCBF /* LaunchScreen.storyboard */; };
 		EDA98B651CC7F1F0008ECCBF /* Buzz_Movie_SelectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA98B641CC7F1F0008ECCBF /* Buzz_Movie_SelectorTests.swift */; };
 		EDA98B701CC7F1F0008ECCBF /* Buzz_Movie_SelectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA98B6F1CC7F1F0008ECCBF /* Buzz_Movie_SelectorUITests.swift */; };
+		EDA98B7E1CC7F271008ECCBF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA98B7D1CC7F271008ECCBF /* LoginViewController.swift */; };
+		EDA98B801CC7F6E9008ECCBF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA98B7F1CC7F6E9008ECCBF /* ProfileViewController.swift */; };
+		EDC5CC4F1CC8B0C1004150A1 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC5CC4E1CC8B0C1004150A1 /* Movie.swift */; };
+		EDC5CC511CC8B165004150A1 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC5CC501CC8B165004150A1 /* Utils.swift */; };
+		EDE244E81CC83F8A00D11458 /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE244E71CC83F8A00D11458 /* NavViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AE0C108E1B7830575C020807 /* Pods-Buzz Movie Selector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Buzz Movie Selector.release.xcconfig"; path = "Pods/Target Support Files/Pods-Buzz Movie Selector/Pods-Buzz Movie Selector.release.xcconfig"; sourceTree = "<group>"; };
+		C15CE6D13FC26DA046FAF772 /* Pods-Buzz Movie Selector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Buzz Movie Selector.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Buzz Movie Selector/Pods-Buzz Movie Selector.debug.xcconfig"; sourceTree = "<group>"; };
+		DD6133CE89C2B2AEADA5AC8B /* Pods_Buzz_Movie_Selector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Buzz_Movie_Selector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED237F3B1CC92EBD00FF2CC9 /* MovieCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
+		ED4CFDE01CC88081000D89C1 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		ED5967211CC8A9DE0003FFE0 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = "Buzz Movie Selector/Constants.swift"; sourceTree = "<group>"; };
 		EDA98B4C1CC7F1F0008ECCBF /* Buzz Movie Selector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Buzz Movie Selector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA98B4F1CC7F1F0008ECCBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDA98B511CC7F1F0008ECCBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +62,11 @@
 		EDA98B6B1CC7F1F0008ECCBF /* Buzz Movie SelectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Buzz Movie SelectorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA98B6F1CC7F1F0008ECCBF /* Buzz_Movie_SelectorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buzz_Movie_SelectorUITests.swift; sourceTree = "<group>"; };
 		EDA98B711CC7F1F0008ECCBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDA98B7D1CC7F271008ECCBF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EDA98B7F1CC7F6E9008ECCBF /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		EDC5CC4E1CC8B0C1004150A1 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		EDC5CC501CC8B165004150A1 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = "Buzz Movie Selector/Utils.swift"; sourceTree = "<group>"; };
+		EDE244E71CC83F8A00D11458 /* NavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				268819FCF0F91C23836B37AB /* Pods_Buzz_Movie_Selector.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +95,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27076C0026A3FED609C4FA0E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C15CE6D13FC26DA046FAF772 /* Pods-Buzz Movie Selector.debug.xcconfig */,
+				AE0C108E1B7830575C020807 /* Pods-Buzz Movie Selector.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C99453A7CB259ADE5DC2BA83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD6133CE89C2B2AEADA5AC8B /* Pods_Buzz_Movie_Selector.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED5967231CC8ABAB0003FFE0 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				ED5967211CC8A9DE0003FFE0 /* Constants.swift */,
+				EDC5CC501CC8B165004150A1 /* Utils.swift */,
+			);
+			name = Others;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		EDA98B431CC7F1F0008ECCBF = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +129,8 @@
 				EDA98B631CC7F1F0008ECCBF /* Buzz Movie SelectorTests */,
 				EDA98B6E1CC7F1F0008ECCBF /* Buzz Movie SelectorUITests */,
 				EDA98B4D1CC7F1F0008ECCBF /* Products */,
+				27076C0026A3FED609C4FA0E /* Pods */,
+				C99453A7CB259ADE5DC2BA83 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +151,9 @@
 				EDA98B511CC7F1F0008ECCBF /* ViewController.swift */,
 				EDA98B531CC7F1F0008ECCBF /* Main.storyboard */,
 				EDA98B561CC7F1F0008ECCBF /* Assets.xcassets */,
+				EDC5CC521CC8B17B004150A1 /* Model */,
+				EDA98B811CC7F6F5008ECCBF /* Controller */,
+				ED5967231CC8ABAB0003FFE0 /* Others */,
 				EDA98B581CC7F1F0008ECCBF /* LaunchScreen.storyboard */,
 				EDA98B5B1CC7F1F0008ECCBF /* Info.plist */,
 			);
@@ -125,6 +178,26 @@
 			path = "Buzz Movie SelectorUITests";
 			sourceTree = "<group>";
 		};
+		EDA98B811CC7F6F5008ECCBF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EDE244E71CC83F8A00D11458 /* NavViewController.swift */,
+				ED4CFDE01CC88081000D89C1 /* SearchViewController.swift */,
+				EDA98B7D1CC7F271008ECCBF /* LoginViewController.swift */,
+				EDA98B7F1CC7F6E9008ECCBF /* ProfileViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		EDC5CC521CC8B17B004150A1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EDC5CC4E1CC8B0C1004150A1 /* Movie.swift */,
+				ED237F3B1CC92EBD00FF2CC9 /* MovieCell.xib */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +205,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EDA98B741CC7F1F0008ECCBF /* Build configuration list for PBXNativeTarget "Buzz Movie Selector" */;
 			buildPhases = (
+				4B821CDEB31B8242BDAB5E5A /* 📦 Check Pods Manifest.lock */,
 				EDA98B481CC7F1F0008ECCBF /* Sources */,
 				EDA98B491CC7F1F0008ECCBF /* Frameworks */,
 				EDA98B4A1CC7F1F0008ECCBF /* Resources */,
+				5DD4C393A776F92C8A4ACFD7 /* 📦 Embed Pods Frameworks */,
+				A2FA941F60D1B7C077E5B8E4 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,6 +310,7 @@
 			files = (
 				EDA98B5A1CC7F1F0008ECCBF /* LaunchScreen.storyboard in Resources */,
 				EDA98B571CC7F1F0008ECCBF /* Assets.xcassets in Resources */,
+				ED237F3C1CC92EBD00FF2CC9 /* MovieCell.xib in Resources */,
 				EDA98B551CC7F1F0008ECCBF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,12 +331,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4B821CDEB31B8242BDAB5E5A /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5DD4C393A776F92C8A4ACFD7 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Buzz Movie Selector/Pods-Buzz Movie Selector-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2FA941F60D1B7C077E5B8E4 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Buzz Movie Selector/Pods-Buzz Movie Selector-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EDA98B481CC7F1F0008ECCBF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED4CFDE11CC88081000D89C1 /* SearchViewController.swift in Sources */,
+				EDA98B7E1CC7F271008ECCBF /* LoginViewController.swift in Sources */,
+				EDC5CC511CC8B165004150A1 /* Utils.swift in Sources */,
+				EDE244E81CC83F8A00D11458 /* NavViewController.swift in Sources */,
 				EDA98B521CC7F1F0008ECCBF /* ViewController.swift in Sources */,
+				ED5967221CC8A9DE0003FFE0 /* Constants.swift in Sources */,
+				EDA98B801CC7F6E9008ECCBF /* ProfileViewController.swift in Sources */,
+				EDC5CC4F1CC8B0C1004150A1 /* Movie.swift in Sources */,
 				EDA98B501CC7F1F0008ECCBF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,6 +532,7 @@
 		};
 		EDA98B751CC7F1F0008ECCBF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C15CE6D13FC26DA046FAF772 /* Pods-Buzz Movie Selector.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Buzz Movie Selector/Info.plist";
@@ -411,6 +544,7 @@
 		};
 		EDA98B761CC7F1F0008ECCBF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE0C108E1B7830575C020807 /* Pods-Buzz Movie Selector.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Buzz Movie Selector/Info.plist";
@@ -485,6 +619,7 @@
 				EDA98B761CC7F1F0008ECCBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EDA98B771CC7F1F0008ECCBF /* Build configuration list for PBXNativeTarget "Buzz Movie SelectorTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +628,7 @@
 				EDA98B791CC7F1F0008ECCBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EDA98B7A1CC7F1F0008ECCBF /* Build configuration list for PBXNativeTarget "Buzz Movie SelectorUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +637,7 @@
 				EDA98B7C1CC7F1F0008ECCBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

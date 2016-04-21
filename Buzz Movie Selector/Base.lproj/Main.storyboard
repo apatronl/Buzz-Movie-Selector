@@ -1,25 +1,196 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uqG-Sc-j1j">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Buzz_Movie_Selector" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-165" y="302"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="bSj-w9-vOL">
+            <objects>
+                <viewController id="7aM-Y0-F9E" customClass="ProfileViewController" customModule="Buzz_Movie_Selector" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b2p-Nd-QOn"/>
+                        <viewControllerLayoutGuide type="bottom" id="pGY-x3-BrG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="udN-7t-f5c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Pgf-B1-lmv">
+                        <barButtonItem key="rightBarButtonItem" image="settings" id="ee9-4S-iOs"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="24z-5D-JiT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1854.5" y="889.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="uO5-AY-zzl">
+            <objects>
+                <viewController id="egl-QF-vKQ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DPc-1G-YKB"/>
+                        <viewControllerLayoutGuide type="bottom" id="z4f-4z-a0G"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DHu-3v-TGO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tgG-cm-yPw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UVO-t1-nZv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1834.5" y="-717.5"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="TWW-pS-jrs">
+            <objects>
+                <tabBarController id="uqG-Sc-j1j" sceneMemberID="viewController">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="mUL-FK-Tcf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="GxW-ks-i5D" kind="relationship" relationship="viewControllers" id="gkw-Cm-88d"/>
+                        <segue destination="igV-yr-aP1" kind="relationship" relationship="viewControllers" id="VEL-es-gP1"/>
+                        <segue destination="NAp-pa-3la" kind="relationship" relationship="viewControllers" id="njL-SF-qLy"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lhB-dy-Nvo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="546" y="302"/>
+        </scene>
+        <!--Movies-->
+        <scene sceneID="4VO-3z-uq9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GxW-ks-i5D" customClass="NavViewController" customModule="Buzz_Movie_Selector" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Movies" image="movie" id="Zed-U2-Jf6">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-1"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kUK-ZI-dTO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="egl-QF-vKQ" kind="relationship" relationship="rootViewController" id="DM0-eb-zs6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DJK-hk-h5u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1285.5" y="-739.5"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="SaG-ou-mv7">
+            <objects>
+                <tableViewController id="y80-KF-0Ma" customClass="SearchViewController" customModule="Buzz_Movie_Selector" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="iHL-Xb-JvJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="BsI-Gm-rNP">
+                            <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="PFf-OZ-bCG">
+                                <rect key="frame" x="0.0" y="136" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PFf-OZ-bCG" id="a8U-ag-xJX">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <accessibility key="accessibilityConfiguration" identifier="MovieCell"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="y80-KF-0Ma" id="yrz-cA-i48"/>
+                            <outlet property="delegate" destination="y80-KF-0Ma" id="amW-9p-bu8"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Fwh-GE-rRS"/>
+                    <connections>
+                        <outlet property="searchBar" destination="BsI-Gm-rNP" id="xvB-Ph-nWN"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SzV-Na-8nx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2093.5" y="81.5"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="p0C-yI-PZ7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NAp-pa-3la" customClass="NavViewController" customModule="Buzz_Movie_Selector" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" image="profile" id="Cir-tt-Bov">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-1"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="I1a-5g-PgC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7aM-Y0-F9E" kind="relationship" relationship="rootViewController" id="0Gc-RY-ajd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GdO-pK-Zwu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1267.5" y="889.5"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="PDq-Y4-XjZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="igV-yr-aP1" customClass="NavViewController" customModule="Buzz_Movie_Selector" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Search" image="search" id="7HO-pI-sZS">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-1"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="URx-yh-IGo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="y80-KF-0Ma" kind="relationship" relationship="rootViewController" id="ErW-e6-QBB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7kc-b0-6rU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1230.5" y="81.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="movie" width="20" height="20"/>
+        <image name="profile" width="30" height="30"/>
+        <image name="search" width="25" height="25"/>
+        <image name="settings" width="26" height="26"/>
+    </resources>
 </document>

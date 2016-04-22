@@ -13,6 +13,7 @@
 		ED237F3C1CC92EBD00FF2CC9 /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED237F3B1CC92EBD00FF2CC9 /* MovieCell.xib */; };
 		ED4CFDE11CC88081000D89C1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4CFDE01CC88081000D89C1 /* SearchViewController.swift */; };
 		ED5967221CC8A9DE0003FFE0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5967211CC8A9DE0003FFE0 /* Constants.swift */; };
+		ED7910C91CCA5BDD00DFCCDA /* NewReleasesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7910C81CCA5BDD00DFCCDA /* NewReleasesViewController.swift */; };
 		EDA98B501CC7F1F0008ECCBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA98B4F1CC7F1F0008ECCBF /* AppDelegate.swift */; };
 		EDA98B521CC7F1F0008ECCBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA98B511CC7F1F0008ECCBF /* ViewController.swift */; };
 		EDA98B551CC7F1F0008ECCBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA98B531CC7F1F0008ECCBF /* Main.storyboard */; };
@@ -53,6 +54,7 @@
 		ED237F3B1CC92EBD00FF2CC9 /* MovieCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
 		ED4CFDE01CC88081000D89C1 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		ED5967211CC8A9DE0003FFE0 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = "Buzz Movie Selector/Constants.swift"; sourceTree = "<group>"; };
+		ED7910C81CCA5BDD00DFCCDA /* NewReleasesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewReleasesViewController.swift; sourceTree = "<group>"; };
 		EDA98B4C1CC7F1F0008ECCBF /* Buzz Movie Selector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Buzz Movie Selector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA98B4F1CC7F1F0008ECCBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDA98B511CC7F1F0008ECCBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 		EDA98B811CC7F6F5008ECCBF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				ED7910C81CCA5BDD00DFCCDA /* NewReleasesViewController.swift */,
 				EDE244E71CC83F8A00D11458 /* NavViewController.swift */,
 				ED4CFDE01CC88081000D89C1 /* SearchViewController.swift */,
 				EDA98B7D1CC7F271008ECCBF /* LoginViewController.swift */,
@@ -397,6 +400,7 @@
 				EDE244E81CC83F8A00D11458 /* NavViewController.swift in Sources */,
 				EDA98B521CC7F1F0008ECCBF /* ViewController.swift in Sources */,
 				ED5967221CC8A9DE0003FFE0 /* Constants.swift in Sources */,
+				ED7910C91CCA5BDD00DFCCDA /* NewReleasesViewController.swift in Sources */,
 				EDA98B801CC7F6E9008ECCBF /* ProfileViewController.swift in Sources */,
 				EDC5CC4F1CC8B0C1004150A1 /* Movie.swift in Sources */,
 				ED16051A1CC972D6006F3B88 /* MovieCell.swift in Sources */,

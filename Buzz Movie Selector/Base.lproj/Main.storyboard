@@ -45,10 +45,10 @@
             </objects>
             <point key="canvasLocation" x="1834.5" y="889.5"/>
         </scene>
-        <!--View Controller-->
+        <!--New Releases-->
         <scene sceneID="uO5-AY-zzl">
             <objects>
-                <viewController id="egl-QF-vKQ" sceneMemberID="viewController">
+                <viewController id="egl-QF-vKQ" customClass="NewReleasesViewController" customModule="Buzz_Movie_Selector" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DPc-1G-YKB"/>
                         <viewControllerLayoutGuide type="bottom" id="z4f-4z-a0G"/>
@@ -56,9 +56,52 @@
                     <view key="view" contentMode="scaleToFill" id="DHu-3v-TGO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jvA-Bn-1A0">
+                                <rect key="frame" x="74" y="72" width="227" height="29"/>
+                                <segments>
+                                    <segment title="New in Theaters"/>
+                                    <segment title="New DVDs"/>
+                                </segments>
+                                <color key="tintColor" red="0.99215686274509807" green="0.72156862745098038" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="segmentedControlAction:" destination="egl-QF-vKQ" eventType="valueChanged" id="XAn-a4-9Cx"/>
+                                </connections>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="107" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mk1-9y-kSa">
+                                <rect key="frame" x="0.0" y="108" width="375" height="510"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="nfC-fw-Aj0" customClass="MovieCell" customModule="Buzz_Movie_Selector" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="107"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nfC-fw-Aj0" id="8fy-Yz-Hfg">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="106.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="z4f-4z-a0G" firstAttribute="top" secondItem="mk1-9y-kSa" secondAttribute="bottom" id="AOo-Ti-FtI"/>
+                            <constraint firstItem="mk1-9y-kSa" firstAttribute="centerX" secondItem="DHu-3v-TGO" secondAttribute="centerX" id="AyN-w7-E2F"/>
+                            <constraint firstItem="mk1-9y-kSa" firstAttribute="top" secondItem="jvA-Bn-1A0" secondAttribute="bottom" constant="8" id="FZy-yT-gx6"/>
+                            <constraint firstItem="jvA-Bn-1A0" firstAttribute="centerX" secondItem="DHu-3v-TGO" secondAttribute="centerX" id="HE8-dO-5Q6"/>
+                            <constraint firstItem="mk1-9y-kSa" firstAttribute="width" secondItem="DHu-3v-TGO" secondAttribute="width" id="Zvd-Wp-CmG"/>
+                            <constraint firstItem="jvA-Bn-1A0" firstAttribute="top" secondItem="DPc-1G-YKB" secondAttribute="bottom" constant="8" id="gED-83-f1e"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="tgG-cm-yPw"/>
+                    <navigationItem key="navigationItem" title="New Releases" id="tgG-cm-yPw">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="17i-tM-ZE5">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="segmentedControl" destination="jvA-Bn-1A0" id="Sdj-AI-L75"/>
+                        <outlet property="tableView" destination="mk1-9y-kSa" id="Sl2-mW-xBg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UVO-t1-nZv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

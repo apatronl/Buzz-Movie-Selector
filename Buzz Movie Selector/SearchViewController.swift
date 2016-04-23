@@ -12,18 +12,20 @@ import SwiftyJSON
 
 class SearchViewController: UITableViewController, UISearchBarDelegate {
     
+    // MARK: - Properties
     @IBOutlet weak var searchBar: UISearchBar!
     var movies: [Movie] = []
     
+    // MARK: - View Setup
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
         self.navigationItem.title = "Search"
         searchBar.delegate = self
-        self.tableView.registerNib(UINib(nibName: "MovieCell", bundle: nil), forCellReuseIdentifier: "MovieCell")
     }
     
+    // MARK: - Table View
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
@@ -33,12 +35,32 @@ class SearchViewController: UITableViewController, UISearchBarDelegate {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        tableView.registerNib(UINib(nibName: "MovieCell", bundle: nil), forCellReuseIdentifier: "MovieCell")
         let cell = tableView.dequeueReusableCellWithIdentifier("MovieCell", forIndexPath: indexPath) as! MovieCell
         let movie = movies[indexPath.row]
         cell.movie = movie
         return cell
     }
     
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.performSegueWithIdentifier("MovieDetail", sender: self)
+    }
+    
+    // MARK: - Segues
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        print("segue!")
+        if segue.identifier == "MovieDetail" {
+            print("segue!")
+            let destinationVC = segue.destinationViewController as! MovieViewController
+            if let indexPath = tableView.indexPathForSelectedRow {
+                destinationVC.movie = movies[indexPath.row]
+                destinationVC.title = movies[indexPath.row].title
+                print(movies[indexPath.row].title)
+            }
+        }
+    }
+
+    // MARK: - Search Bar
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
         searchBar.resignFirstResponder()
         movies.removeAll()
@@ -51,6 +73,7 @@ class SearchViewController: UITableViewController, UISearchBarDelegate {
         }
     }
     
+    // MARK: - Helper Functions
     func searchMovies(key: String) {
         let url = Constants.searchURL + "&q=" + key + "&page_limit=15"
         print(url)

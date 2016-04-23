@@ -14,6 +14,7 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let user = User(name: "Ale Patron", username: "ale_patron", password: "tech", profilePicture: nil)
     }
     
     override func didReceiveMemoryWarning() {

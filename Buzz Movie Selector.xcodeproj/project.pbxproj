@@ -15,7 +15,6 @@
 		ED5967221CC8A9DE0003FFE0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5967211CC8A9DE0003FFE0 /* Constants.swift */; };
 		ED7910C91CCA5BDD00DFCCDA /* NewReleasesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7910C81CCA5BDD00DFCCDA /* NewReleasesViewController.swift */; };
 		EDA98B501CC7F1F0008ECCBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA98B4F1CC7F1F0008ECCBF /* AppDelegate.swift */; };
-		EDA98B521CC7F1F0008ECCBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA98B511CC7F1F0008ECCBF /* ViewController.swift */; };
 		EDA98B551CC7F1F0008ECCBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA98B531CC7F1F0008ECCBF /* Main.storyboard */; };
 		EDA98B571CC7F1F0008ECCBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDA98B561CC7F1F0008ECCBF /* Assets.xcassets */; };
 		EDA98B5A1CC7F1F0008ECCBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA98B581CC7F1F0008ECCBF /* LaunchScreen.storyboard */; };
@@ -27,6 +26,7 @@
 		EDC5CC511CC8B165004150A1 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC5CC501CC8B165004150A1 /* Utils.swift */; };
 		EDE244E81CC83F8A00D11458 /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE244E71CC83F8A00D11458 /* NavViewController.swift */; };
 		EDF476951CCBDD35003A10A2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF476941CCBDD35003A10A2 /* User.swift */; };
+		EDF476971CCBF6DF003A10A2 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF476961CCBF6DF003A10A2 /* MovieViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +58,6 @@
 		ED7910C81CCA5BDD00DFCCDA /* NewReleasesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewReleasesViewController.swift; sourceTree = "<group>"; };
 		EDA98B4C1CC7F1F0008ECCBF /* Buzz Movie Selector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Buzz Movie Selector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA98B4F1CC7F1F0008ECCBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EDA98B511CC7F1F0008ECCBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EDA98B541CC7F1F0008ECCBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EDA98B561CC7F1F0008ECCBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDA98B591CC7F1F0008ECCBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -75,6 +74,7 @@
 		EDC5CC501CC8B165004150A1 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = "Buzz Movie Selector/Utils.swift"; sourceTree = "<group>"; };
 		EDE244E71CC83F8A00D11458 /* NavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavViewController.swift; sourceTree = "<group>"; };
 		EDF476941CCBDD35003A10A2 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EDF476961CCBF6DF003A10A2 /* MovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,7 +157,6 @@
 			isa = PBXGroup;
 			children = (
 				EDA98B4F1CC7F1F0008ECCBF /* AppDelegate.swift */,
-				EDA98B511CC7F1F0008ECCBF /* ViewController.swift */,
 				EDA98B531CC7F1F0008ECCBF /* Main.storyboard */,
 				EDA98B561CC7F1F0008ECCBF /* Assets.xcassets */,
 				EDC5CC521CC8B17B004150A1 /* Model */,
@@ -190,6 +189,7 @@
 		EDA98B811CC7F6F5008ECCBF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EDF476961CCBF6DF003A10A2 /* MovieViewController.swift */,
 				ED7910C81CCA5BDD00DFCCDA /* NewReleasesViewController.swift */,
 				EDE244E71CC83F8A00D11458 /* NavViewController.swift */,
 				ED4CFDE01CC88081000D89C1 /* SearchViewController.swift */,
@@ -397,11 +397,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDF476971CCBF6DF003A10A2 /* MovieViewController.swift in Sources */,
 				ED4CFDE11CC88081000D89C1 /* SearchViewController.swift in Sources */,
 				EDA98B7E1CC7F271008ECCBF /* LoginViewController.swift in Sources */,
 				EDC5CC511CC8B165004150A1 /* Utils.swift in Sources */,
 				EDE244E81CC83F8A00D11458 /* NavViewController.swift in Sources */,
-				EDA98B521CC7F1F0008ECCBF /* ViewController.swift in Sources */,
 				ED5967221CC8A9DE0003FFE0 /* Constants.swift in Sources */,
 				ED7910C91CCA5BDD00DFCCDA /* NewReleasesViewController.swift in Sources */,
 				EDA98B801CC7F6E9008ECCBF /* ProfileViewController.swift in Sources */,

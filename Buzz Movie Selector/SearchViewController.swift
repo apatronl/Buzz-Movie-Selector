@@ -34,6 +34,14 @@ class SearchViewController: UITableViewController, UISearchBarDelegate {
         return movies.count
     }
     
+    override func scrollViewDidScroll(scrollView: UIScrollView) {
+        //searchBar.barPosition
+        var rect = searchBar.frame;
+        rect.origin.y = max(0, scrollView.contentOffset.y);
+        scrollView.setNeedsLayout()
+        searchBar.frame = CGRectMake(0, max(0,scrollView.contentOffset.y), 320, 44);
+    }
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         tableView.registerNib(UINib(nibName: "MovieCell", bundle: nil), forCellReuseIdentifier: "MovieCell")
         let cell = tableView.dequeueReusableCellWithIdentifier("MovieCell", forIndexPath: indexPath) as! MovieCell

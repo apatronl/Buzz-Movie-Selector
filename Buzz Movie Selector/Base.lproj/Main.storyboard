@@ -73,7 +73,7 @@
                         <viewControllerLayoutGuide type="top" id="DPc-1G-YKB"/>
                         <viewControllerLayoutGuide type="bottom" id="z4f-4z-a0G"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="DHu-3v-TGO">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="DHu-3v-TGO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -99,6 +99,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="106.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="tFh-fr-FqI" kind="show" identifier="MovieDetail" id="bR3-wq-O6l"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -180,7 +183,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Type a movie title" id="BsI-Gm-rNP">
+                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Search for movies..." id="BsI-Gm-rNP">
                             <rect key="frame" x="0.0" y="64" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits"/>
@@ -229,7 +232,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QdC-xw-q38" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2482.5" y="81.5"/>
+            <point key="canvasLocation" x="2398.5" y="-196.5"/>
         </scene>
         <!--Profile-->
         <scene sceneID="p0C-yI-PZ7">
@@ -281,4 +284,7 @@
         <image name="search" width="25" height="25"/>
         <image name="settings" width="26" height="26"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="bR3-wq-O6l"/>
+    </inferredMetricsTieBreakers>
 </document>

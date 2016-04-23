@@ -103,6 +103,31 @@ class NewReleasesViewController: UIViewController, UITableViewDelegate, UITableV
         return returnValue
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.performSegueWithIdentifier("MovieDetail", sender: self)
+    }
+    
+    // MARK: - Segues
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        print("segue!")
+        if segue.identifier == "MovieDetail" {
+            print("segue!")
+            let destinationVC = segue.destinationViewController as! MovieViewController
+            if let indexPath = tableView.indexPathForSelectedRow {
+                if segmentedControl.selectedSegmentIndex == 0 {
+                    destinationVC.movie = newInTheatersMovies[indexPath.row]
+                    destinationVC.title = newInTheatersMovies[indexPath.row].title
+                    print(newInTheatersMovies[indexPath.row].title)
+                } else if segmentedControl.selectedSegmentIndex == 1 {
+                    destinationVC.movie = newDvds[indexPath.row]
+                    destinationVC.title = newDvds[indexPath.row].title
+                    print(newDvds[indexPath.row].title)
+                }
+            }
+        }
+    }
+
+    
     
     func getNewInTheaters() {
         let url = Constants.newInTheatersURL

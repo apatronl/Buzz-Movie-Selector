@@ -26,6 +26,7 @@
 		EDC5CC4F1CC8B0C1004150A1 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC5CC4E1CC8B0C1004150A1 /* Movie.swift */; };
 		EDC5CC511CC8B165004150A1 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC5CC501CC8B165004150A1 /* Utils.swift */; };
 		EDE244E81CC83F8A00D11458 /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE244E71CC83F8A00D11458 /* NavViewController.swift */; };
+		EDF476951CCBDD35003A10A2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF476941CCBDD35003A10A2 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		EDC5CC4E1CC8B0C1004150A1 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		EDC5CC501CC8B165004150A1 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = "Buzz Movie Selector/Utils.swift"; sourceTree = "<group>"; };
 		EDE244E71CC83F8A00D11458 /* NavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavViewController.swift; sourceTree = "<group>"; };
+		EDF476941CCBDD35003A10A2 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +205,7 @@
 				EDC5CC4E1CC8B0C1004150A1 /* Movie.swift */,
 				ED237F3B1CC92EBD00FF2CC9 /* MovieCell.xib */,
 				ED1605191CC972D6006F3B88 /* MovieCell.swift */,
+				EDF476941CCBDD35003A10A2 /* User.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -402,6 +405,7 @@
 				ED5967221CC8A9DE0003FFE0 /* Constants.swift in Sources */,
 				ED7910C91CCA5BDD00DFCCDA /* NewReleasesViewController.swift in Sources */,
 				EDA98B801CC7F6E9008ECCBF /* ProfileViewController.swift in Sources */,
+				EDF476951CCBDD35003A10A2 /* User.swift in Sources */,
 				EDC5CC4F1CC8B0C1004150A1 /* Movie.swift in Sources */,
 				ED16051A1CC972D6006F3B88 /* MovieCell.swift in Sources */,
 				EDA98B501CC7F1F0008ECCBF /* AppDelegate.swift in Sources */,

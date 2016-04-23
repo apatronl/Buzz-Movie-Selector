@@ -35,6 +35,14 @@
                     <view key="view" contentMode="scaleToFill" id="udN-7t-f5c">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Ec-eI-9qb">
+                                <rect key="frame" x="123" y="92" width="128" height="128"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4lM-RC-w9X">
+                                <rect key="frame" x="0.0" y="267" width="375" height="200"/>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Pgf-B1-lmv">
@@ -72,7 +80,7 @@
                                 <rect key="frame" x="0.0" y="108" width="375" height="510"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="nfC-fw-Aj0" customClass="MovieCell" customModule="Buzz_Movie_Selector" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" id="nfC-fw-Aj0" customClass="MovieCell" customModule="Buzz_Movie_Selector" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="107"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nfC-fw-Aj0" id="8fy-Yz-Hfg">
@@ -96,6 +104,9 @@
                     <navigationItem key="navigationItem" title="New Releases" id="tgG-cm-yPw">
                         <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="17i-tM-ZE5">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="reloadPressed:" destination="egl-QF-vKQ" id="0Zj-Wp-MYG"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>

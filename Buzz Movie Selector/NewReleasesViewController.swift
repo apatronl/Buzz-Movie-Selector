@@ -15,6 +15,8 @@ class NewReleasesViewController: UIViewController, UITableViewDelegate, UITableV
     
     var newInTheatersMovies: [Movie] = []
     var newDvds: [Movie] = []
+    var newInTheatersLoaded: Bool = false
+    var newDVDsLoaded: Bool = false
     
     
     @IBOutlet weak var segmentedControl: UISegmentedControl!
@@ -23,12 +25,33 @@ class NewReleasesViewController: UIViewController, UITableViewDelegate, UITableV
     override func viewDidLoad() {
         super.viewDidLoad()
         getNewInTheaters()
+        newInTheatersLoaded = true
         tableView.delegate = self
         tableView.registerNib(UINib(nibName: "MovieCell", bundle: nil), forCellReuseIdentifier: "MovieCell")
         tableView.dataSource = self
     }
     
     @IBAction func segmentedControlAction(sender: UISegmentedControl) {
+        if (segmentedControl.selectedSegmentIndex == 0) {
+            if (!newInTheatersLoaded) {
+                newInTheatersMovies.removeAll()
+                tableView.reloadData()
+                getNewInTheaters()
+                print("New in theaters!")
+            }
+            tableView.reloadData()
+        } else if (segmentedControl.selectedSegmentIndex == 1) {
+            if (!newDVDsLoaded) {
+                newDvds.removeAll()
+                tableView.reloadData()
+                getNewDVDs()
+                print("New DVD's!")
+            }
+            tableView.reloadData()
+        }
+    }
+    
+    @IBAction func reloadPressed(sender: UIBarButtonItem) {
         if (segmentedControl.selectedSegmentIndex == 0) {
             newInTheatersMovies.removeAll()
             tableView.reloadData()
@@ -41,6 +64,7 @@ class NewReleasesViewController: UIViewController, UITableViewDelegate, UITableV
             print("New DVD's!")
         }
     }
+    
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("MovieCell", forIndexPath: indexPath) as! MovieCell
@@ -81,11 +105,12 @@ class NewReleasesViewController: UIViewController, UITableViewDelegate, UITableV
     
     
     func getNewInTheaters() {
-        let url = Constants.newDVDs
+        let url = Constants.newInTheatersURL
         print(url)
         Alamofire.request(.GET, url).validate().responseJSON { response in
             switch response.result {
             case .Success:
+                self.newInTheatersLoaded = true
                 if let value = response.result.value {
                     var res = JSON(value)
                     let total = Int(String(res["total"]))!
@@ -132,11 +157,12 @@ class NewReleasesViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     func getNewDVDs() {
-        let url = Constants.newDVDs
+        let url = Constants.newDVDsURL
         print(url)
         Alamofire.request(.GET, url).validate().responseJSON { response in
             switch response.result {
             case .Success:
+                self.newDVDsLoaded = true
                 if let value = response.result.value {
                     var res = JSON(value)
                     let total = Int(String(res["total"]))!

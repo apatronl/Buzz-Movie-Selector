@@ -16,6 +16,8 @@ struct Constants {
     
     static let searchURL = rotten + "movies.json?apikey=" + apiKey
     
-    static let newDVDs = rotten + "lists/dvds/new_releases.json?apikey=" + apiKey + "&page_limit=15"
+    static let newInTheatersURL = rotten + "lists/movies/in_theaters.json?apikey=" + apiKey + "&page_limit=15"
+    
+    static let newDVDsURL = rotten + "lists/dvds/new_releases.json?apikey=" + apiKey + "&page_limit=15"
     
 }

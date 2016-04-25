@@ -147,7 +147,9 @@ class NewReleasesViewController: UIViewController, UITableViewDelegate, UITableV
                                     let year = String(res["movies"][i]["year"])
                                     let mpaa_rating = res["movies"][i]["mpaa_rating"].string
                                     let thumbnail = res["movies"][i]["posters"]["thumbnail"].string?.urlToImg()
-                                    let movie = Movie(title: title, mpaa_rating: mpaa_rating!, year: year, thumbnail: thumbnail)
+                                    let trailer = res["movies"][i]["links"]["alternate"].string
+                                    let synopsis = res["movies"][i]["synopsis"].string
+                                    let movie = Movie(title: title, mpaa_rating: mpaa_rating!, year: year, thumbnail: thumbnail, trailer: trailer!, synopsis: synopsis!)
                                     self.newInTheatersMovies.append(movie)
                                     print(title)
                                     print(year)
@@ -162,7 +164,9 @@ class NewReleasesViewController: UIViewController, UITableViewDelegate, UITableV
                                     let mpaa_rating = res["movies"][i]["mpaa_rating"].string
                                     print(mpaa_rating)
                                     let thumbnail = res["movies"][i]["posters"]["thumbnail"].string?.urlToImg()
-                                    let movie = Movie(title: title, mpaa_rating: mpaa_rating!, year: year, thumbnail: thumbnail)
+                                    let trailer = res["movies"][i]["links"]["alternate"].string
+                                    let synopsis = res["movies"][i]["synopsis"].string
+                                    let movie = Movie(title: title, mpaa_rating: mpaa_rating!, year: year, thumbnail: thumbnail, trailer: trailer!, synopsis: synopsis!)
                                     self.newInTheatersMovies.append(movie)
                                     print(title)
                                     print(year)
@@ -199,7 +203,9 @@ class NewReleasesViewController: UIViewController, UITableViewDelegate, UITableV
                                     let year = String(res["movies"][i]["year"])
                                     let mpaa_rating = res["movies"][i]["mpaa_rating"].string
                                     let thumbnail = res["movies"][i]["posters"]["thumbnail"].string?.urlToImg()
-                                    let movie = Movie(title: title, mpaa_rating: mpaa_rating!, year: year, thumbnail: thumbnail)
+                                    let trailer = res["movies"][i]["links"]["alternate"].string
+                                    let synopsis = res["movies"][i]["synopsis"].string
+                                    let movie = Movie(title: title, mpaa_rating: mpaa_rating!, year: year, thumbnail: thumbnail, trailer: trailer!, synopsis: synopsis!)
                                     self.newDvds.append(movie)
                                     print(title)
                                     print(year)
@@ -214,7 +220,9 @@ class NewReleasesViewController: UIViewController, UITableViewDelegate, UITableV
                                     let mpaa_rating = res["movies"][i]["mpaa_rating"].string
                                     print(mpaa_rating)
                                     let thumbnail = res["movies"][i]["posters"]["thumbnail"].string?.urlToImg()
-                                    let movie = Movie(title: title, mpaa_rating: mpaa_rating!, year: year, thumbnail: thumbnail)
+                                    let trailer = res["movies"][i]["links"]["alternate"].string
+                                    let synopsis = res["movies"][i]["synopsis"].string
+                                    let movie = Movie(title: title, mpaa_rating: mpaa_rating!, year: year, thumbnail: thumbnail, trailer: trailer!, synopsis: synopsis!)
                                     self.newDvds.append(movie)
                                     print(title)
                                     print(year)
@@ -250,5 +258,4 @@ class NewReleasesViewController: UIViewController, UITableViewDelegate, UITableV
             break
         }
     }
-    
 }

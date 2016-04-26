@@ -31,6 +31,7 @@ class NewReleasesViewController: UIViewController, UITableViewDelegate, UITableV
         tableView.dataSource = self
     }
     
+    // MARK: - Segmented Controller
     @IBAction func segmentedControlAction(sender: UISegmentedControl) {
         if (segmentedControl.selectedSegmentIndex == 0) {
             if (!newInTheatersLoaded) {
@@ -65,7 +66,7 @@ class NewReleasesViewController: UIViewController, UITableViewDelegate, UITableV
         }
     }
     
-    
+    // MARK: - Table View
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("MovieCell", forIndexPath: indexPath) as! MovieCell
         

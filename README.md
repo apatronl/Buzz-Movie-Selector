@@ -9,3 +9,9 @@ To parse the information obtained from the requests, I used the [SwiftyJSON](htt
 
 #Movie Information
 All the results shown in this app are obtained using the [Rotten Tomatoes](https://developer.rottentomatoes.com/) movie search API.
+
+<p align="center">
+<img src=“NewReleases.png" width="350"/>
+<img src=“Search.png" width="350"/>
+<img src=“MovieDetail.png" width="350"/>
+</p>

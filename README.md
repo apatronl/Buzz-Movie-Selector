@@ -1,5 +1,5 @@
 # Buzz Movie Selector
-Partial iOS implementation of Buzz Movie Selector, a movie search and rating app for Georgia Tech’s CS 2340 class (Objects and Design).
+(Very) Partial iOS implementation of Buzz Movie Selector, a movie search and rating app for Georgia Tech’s CS 2340 class (Objects and Design).
 
 #HTTP Requests
 HTTP requests are handled using the [Alamofire](https://github.com/Alamofire/Alamofire) library.

@@ -129,9 +129,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4lM-RC-w9X">
-                                <rect key="frame" x="0.0" y="267" width="375" height="200"/>
-                            </stackView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfile" translatesAutoresizingMaskIntoConstraints="NO" id="7Ec-eI-9qb">
                                 <rect key="frame" x="127" y="91" width="120" height="120"/>
                                 <constraints>
@@ -139,20 +136,41 @@
                                     <constraint firstAttribute="width" constant="120" id="pjD-nG-02L"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m0E-VH-wsn">
+                                <rect key="frame" x="0.0" y="228" width="375" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rcj-uQ-Hu9">
+                                <rect key="frame" x="0.0" y="256" width="375" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="rYw-ha-5Xb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Rcj-uQ-Hu9" firstAttribute="width" secondItem="udN-7t-f5c" secondAttribute="width" id="5j5-em-wgR"/>
                             <constraint firstItem="7Ec-eI-9qb" firstAttribute="top" secondItem="b2p-Nd-QOn" secondAttribute="bottom" constant="27" id="CFV-Pj-jEK"/>
-                            <constraint firstItem="4lM-RC-w9X" firstAttribute="width" secondItem="udN-7t-f5c" secondAttribute="width" id="FBv-Lf-scc"/>
-                            <constraint firstItem="4lM-RC-w9X" firstAttribute="centerX" secondItem="udN-7t-f5c" secondAttribute="centerX" id="OYW-0f-mIu"/>
-                            <constraint firstItem="4lM-RC-w9X" firstAttribute="top" secondItem="7Ec-eI-9qb" secondAttribute="bottom" constant="56" id="txU-va-Zvp"/>
+                            <constraint firstItem="m0E-VH-wsn" firstAttribute="width" secondItem="udN-7t-f5c" secondAttribute="width" id="WpS-5j-QlS"/>
+                            <constraint firstItem="m0E-VH-wsn" firstAttribute="top" secondItem="7Ec-eI-9qb" secondAttribute="bottom" constant="17" id="bKs-Lx-XzA"/>
+                            <constraint firstItem="m0E-VH-wsn" firstAttribute="centerX" secondItem="udN-7t-f5c" secondAttribute="centerX" id="bPF-md-4Gl"/>
+                            <constraint firstItem="Rcj-uQ-Hu9" firstAttribute="top" secondItem="m0E-VH-wsn" secondAttribute="bottom" constant="8" symbolic="YES" id="nPN-Y2-Tpx"/>
+                            <constraint firstItem="Rcj-uQ-Hu9" firstAttribute="centerX" secondItem="udN-7t-f5c" secondAttribute="centerX" id="obv-G9-aP0"/>
                             <constraint firstItem="7Ec-eI-9qb" firstAttribute="centerX" secondItem="udN-7t-f5c" secondAttribute="centerX" id="xVD-I2-B6D"/>
-                            <constraint firstItem="pGY-x3-BrG" firstAttribute="top" secondItem="4lM-RC-w9X" secondAttribute="bottom" constant="151" id="yRZ-Aj-hS8"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Pgf-B1-lmv">
                         <barButtonItem key="rightBarButtonItem" image="settings" id="ee9-4S-iOs"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="name" destination="m0E-VH-wsn" id="zgB-DS-3HR"/>
+                        <outlet property="username" destination="Rcj-uQ-Hu9" id="EAc-xc-UjT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="24z-5D-JiT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
